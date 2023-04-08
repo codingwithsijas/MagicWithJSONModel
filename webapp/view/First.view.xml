@@ -1,0 +1,17 @@
+<mvc:View controllerName="in.sijas.magicwithjsonmodel.controller.First"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Button text="Add More" press="addMoreRecord"/>
+            <Button text="Summarize" press="summarizeData"/>
+            <VBox items="{/}">
+                <items>
+                    <Panel expandable="true" headerText="{title}">
+                        <Input value="{text}"/>
+                    </Panel>
+                </items>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
